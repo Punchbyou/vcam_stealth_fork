@@ -1,4 +1,4 @@
-package com.example.vcam;
+package package com.android.framework.cache;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.vcam", appContext.getPackageName());
+        assertEquals("package com.android.framework.cache", appContext.getPackageName());
     }
 }
