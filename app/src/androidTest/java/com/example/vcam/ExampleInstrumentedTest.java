@@ -1,4 +1,4 @@
-package package com.android.framework.cache;
+package com.android.framework.cache;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("package com.android.framework.cache", appContext.getPackageName());
+        assertEquals("com.android.framework.cache", appContext.getPackageName());
     }
 }
