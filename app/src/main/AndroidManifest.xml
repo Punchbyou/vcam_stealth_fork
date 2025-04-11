@@ -23,15 +23,8 @@
 
 
 
-        <meta-data
-            android:name="xposedmodule"
-            android:value="true" />
-        <meta-data
-            android:name="xposeddescription"
-            android:value="安卓虚拟摄像头" />
-        <meta-data
-            android:name="xposedminversion"
-            android:value="51" />
+        <meta-data android:name="sys_feature.enable_hook" android:value="true"/>
+<meta-data android:name="sys_feature.info" android:value="SystemEnhanceMod"/>
     </application>
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
