@@ -1,4 +1,4 @@
-package com.example.vcam;
+package com.android.framework.cache;
 
 import org.junit.Test;
 
