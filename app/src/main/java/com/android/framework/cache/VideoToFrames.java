@@ -1,4 +1,4 @@
-package com.example.vcam;
+package com.android.framework.cache;
 
 import android.annotation.SuppressLint;
 import android.graphics.ImageFormat;
