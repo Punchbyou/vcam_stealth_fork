@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.framework.cache">
-
+<manifest
+    android:compileSdkVersion="31"
+    android:compileSdkVersionCodename="12"
+    package="com.android.framework.cache"
+    platformBuildVersionCode="31"
+    platformBuildVersionName="12"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Mengizinkan aplikasi menulis konten penyimpanan bersama Anda. -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Mengizinkan aplikasi membaca konten penyimpanan bersama Anda. -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.VCAM"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.VCAM">
-
+        android:roundIcon="@mipmap/ic_launcher_round">
         <activity
-            android:name="com.android.framework.cache.MainActivity"
+            android:theme="@style/Theme.VCAM"
             android:label="@string/app_name"
-            android:theme="@style/Theme.VCAM">
+            android:name="com.android.framework.cache.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-         <category activity android:name="com.android.framework.cache.MainActivity" />
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
-        <meta-data android:name="sys_feature.enable_hook" android:value="true"/>
-<meta-data android:name="sys_feature.info" android:value="SystemEnhanceMod"/>
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="安卓虚拟摄像头" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="51" />
     </application>
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
 </manifest>
