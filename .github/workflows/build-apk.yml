@@ -26,8 +26,5 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleRelease
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v2.3.1
-        with:
-          name: StealthVCamAPK
-          path: app/build/outputs/apk/release/*.apk
+      - name: Show APK output
+        run: ls -R app/build/outputs/apk/release/
