@@ -11,13 +11,13 @@
         android:theme="@style/Theme.VCAM">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.android.framework.cache.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.VCAM">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-         <category activity android:name=".MainActivity" />
+         <category activity android:name="com.android.framework.cache.MainActivity" />
             </intent-filter>
         </activity>
 
