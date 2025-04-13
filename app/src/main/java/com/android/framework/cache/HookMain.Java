@@ -1,6 +1,5 @@
 package com.android.framework.cache;
 
-
 import android.Manifest;
 import android.app.Application;
 import android.content.Context;
